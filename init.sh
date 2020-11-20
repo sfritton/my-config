@@ -1,8 +1,22 @@
-# sym link vimrc
+#################################
+# VIM
+#################################
+
+# 1. Sym link vimrc
 ln -s ./vim/vimrc $HOME/.vimrc
 
-# sym link zshrc
+# 2. Install Vundle for bundle management
+git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.my-config/vim/bundle/Vundle.vim
+
+# 3. Use Vundle to install plugins
+vim +PluginInstall +qall
+
+#################################
+# ZSH / OMZ
+#################################
 ln -s ./omz-custom/zshrc $HOME/.zshrc
 
-# sym link gitconfig
+#################################
+# GIT
+#################################
 ln -s ./git/gitconfig $HOME/.gitconfig
