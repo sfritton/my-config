@@ -1,0 +1,116 @@
+# --------------------------------------------------------------------------
+# JS
+# --------------------------------------------------------------------------
+
+snippet if "if (condition) { ... }"
+if (${1:true}) {
+	${2:${VISUAL}}
+}
+endsnippet
+
+snippet ife "if (condition) { ... } else { ... }"
+if (${1:true}) {
+	${2:${VISUAL}}
+} else {
+	$3
+}
+endsnippet
+
+snippet ter " condition ? ... : ..."
+${1:condition} ? ${2:${VISUAL}} : $3
+endsnippet
+
+snippet log "console.log('...', ...)"
+console.log('$1', $1);
+endsnippet
+
+snippet kval "key: value"
+${1:key}: ${2:value}
+endsnippet
+
+# --------------------------------------------------------------------------
+# ES6
+# --------------------------------------------------------------------------
+
+snippet imp "import { ... } from ..."
+import ${1:{ $2 }} from '$3';
+endsnippet
+
+# --------------------------------------------------------------------------
+# React
+# --------------------------------------------------------------------------
+
+snippet ri1 "import React"
+import React from 'react';
+endsnippet
+
+snippet ri2 "import React, PureComponent, PropTypes"
+import React, { ${1:Pure}Component } from 'react';
+import PropTypes from 'prop-types';
+endsnippet
+
+snippet rcla "react class"
+class ${1:MyComponent} extends PureComponent {
+	render() {
+		return (
+			${2:<${3:div}>
+				$4
+			</$3>}
+		)
+	}
+}
+endsnippet
+
+snippet rcon "react constructor"
+constructor(props) {
+	super(props)
+
+	this.state = {
+		$1: $2
+	}
+}
+endsnippet
+
+snippet rpts "proptypes for react component"
+${1:MyComponent}.propTypes = {
+	${2:prop}: PropTypes.${3:string}
+}
+endsnippet
+
+snippet rpt "single proptype for react component"
+${1:prop}: PropTypes.${2:string}
+endsnippet
+
+snippet rdp "default props for react component"
+${1:MyComponent}.defaultProps = {
+	${2:prop}: ${3:value},
+}
+endsnippet
+
+snippet rcom "simple component"
+${1:({ $2 })} => (
+	${3:<${4:div}>
+		$5
+	</$4>}
+)
+endsnippet
+
+# --------------------------------------------------------------------------
+# JSX
+# --------------------------------------------------------------------------
+
+snippet tag "<tag> ... </tag>"
+<${1:div}>
+	${2:${VISUAL}}
+</$1>
+endsnippet
+
+snippet csx "{/* ... */}"
+{/* ${VISUAL} */}
+endsnippet
+
+snippet mdsec "markdown section"
+<section>
+	<MarkdownSection name="${1:name}" />
+</section>
+endsnippet
