@@ -1,0 +1,11 @@
+[user]
+	name = Sam Fritton
+	email = sfritton94@gmail.com
+[alias]
+  hist = log --pretty=format:'%x09%C(blue)%ad%C(reset) %C(green)[%h]%C(reset) | %C(yellow)%an%C(reset) : %C(red)%s%C(reset) %C(blue)%d%C(reset)' --graph --date=short
+  rekt = reset --hard
+  forget = "!f() { file=${1}; git update-index --assume-unchanged $file; }; f"
+  remember = "!f() { file=${1}; git update-index --no-assume-unchanged $file; }; f"
+[core]
+  editor = vim
+	excludesfile = $HOME/.my-config/git/gitignore_global
