@@ -1,0 +1,104 @@
+{
+  "telemetry.enableTelemetry": false,
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.cursorStyle": "block",
+  "editor.accessibilitySupport": "off",
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "iTerm.app",
+  "editor.formatOnSave": true,
+  "breadcrumbs.enabled": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "Monokai",
+  "vim.changeWordIncludesWhitespace": true,
+  "vim.hlsearch": true,
+  "vim.leader": ",",
+  "vim.smartcase": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<leader>", "d"],
+      "commands": [":noh"]
+    },
+    {
+      "before": ["<leader>", "b", "m"],
+      "commands": ["bookmarks.toggle"]
+    },
+    {
+      "before": ["<leader>", "b", "l"],
+      "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["<leader>", "b", "j"],
+      "commands": ["bookmarks.jumpToNext"]
+    },
+    {
+      "before": ["<leader>", "b", "k"],
+      "commands": ["bookmarks.jumpToPrevious"]
+    }
+  ],
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.enablePreview": false,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "highlight.regexes": {
+    "(/[/*] ?)(TODO:?|END-TODO:?)(.*)?": [
+      {},
+      {
+        "color": "rgb(255,255,100)",
+        "overviewRulerColor": "rgba(255,255,0,0.85)",
+        "overviewRulerLane": 4
+      },
+      { "color": "rgb(215,215,0)" }
+    ],
+    "(/[/*] ?)(DEPRECATED)(.*)?": [
+      {},
+      {
+        "color": "rgb(255,100,100)",
+        "overviewRulerColor": "rgba(255,100,0,0.85)",
+        "overviewRulerLane": 4
+      },
+      { "color": "rgb(215,100,100)" }
+    ]
+  },
+  "search.smartCase": true,
+  "git.confirmSync": false,
+  "typescript.experimental.useSeparateSyntaxServer": true,
+  "terminal.integrated.rendererType": "dom",
+  "vim.cursorStylePerMode.insert": "line",
+  "window.zoomLevel": 0,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "\"FiraCode-Retina\", 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontWeight": "500",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.blame.ignoreWhitespace": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.ignoreRecommendations": true
+}
