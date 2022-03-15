@@ -4,8 +4,16 @@
 [alias]
   hist = log --pretty=format:'%x09%C(blue)%ad%C(reset) %C(green)[%h]%C(reset) | %C(yellow)%an%C(reset) : %C(red)%s%C(reset) %C(blue)%d%C(reset)' --graph --date=short
   rekt = reset --hard
+  sync = "!f() { local BRANCH=${1:-${git branch --show-current}}; git checkout $BRANCH && git pull origin $BRANCH && git pull origin master; }; f"
+  fresh = "!f() { local BRANCH_NAME=${1}; git sync master && git checkout -b $BRANCH_NAME; }; f"
   forget = "!f() { file=${1}; git update-index --assume-unchanged $file; }; f"
   remember = "!f() { file=${1}; git update-index --no-assume-unchanged $file; }; f"
 [core]
   editor = vim
-	excludesfile = $HOME/.my-config/git/gitignore_global
+  excludesfile = $HOME/.my-config/git/gitignore_global
+[pull]
+  rebase = false
+[push]
+  default = current
+[init]
+  defaultBranch = main

@@ -1,5 +1,5 @@
 {
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.cursorStyle": "block",
@@ -17,45 +17,94 @@
   "vim.smartcase": true,
   "vim.normalModeKeyBindings": [
     {
-      "before": ["<C-h>"],
-      "after": ["<C-w>", "h"]
+      "before": [
+        "<C-h>"
+      ],
+      "after": [
+        "<C-w>",
+        "h"
+      ]
     },
     {
-      "before": ["<C-l>"],
-      "after": ["<C-w>", "l"]
+      "before": [
+        "<C-l>"
+      ],
+      "after": [
+        "<C-w>",
+        "l"
+      ]
     },
     {
-      "before": ["<C-j>"],
-      "after": ["<C-w>", "j"]
+      "before": [
+        "<C-j>"
+      ],
+      "after": [
+        "<C-w>",
+        "j"
+      ]
     },
     {
-      "before": ["<C-k>"],
-      "after": ["<C-w>", "k"]
+      "before": [
+        "<C-k>"
+      ],
+      "after": [
+        "<C-w>",
+        "k"
+      ]
     },
     {
-      "before": ["<leader>", "d"],
-      "commands": [":noh"]
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "commands": [
+        ":noh"
+      ]
     },
     {
-      "before": ["<leader>", "b", "m"],
-      "commands": ["bookmarks.toggle"]
+      "before": [
+        "<leader>",
+        "b",
+        "m"
+      ],
+      "commands": [
+        "bookmarks.toggle"
+      ]
     },
     {
-      "before": ["<leader>", "b", "l"],
-      "commands": ["bookmarks.list"]
+      "before": [
+        "<leader>",
+        "b",
+        "l"
+      ],
+      "commands": [
+        "bookmarks.list"
+      ]
     },
     {
-      "before": ["<leader>", "b", "j"],
-      "commands": ["bookmarks.jumpToNext"]
+      "before": [
+        "<leader>",
+        "b",
+        "j"
+      ],
+      "commands": [
+        "bookmarks.jumpToNext"
+      ]
     },
     {
-      "before": ["<leader>", "b", "k"],
-      "commands": ["bookmarks.jumpToPrevious"]
+      "before": [
+        "<leader>",
+        "b",
+        "k"
+      ],
+      "commands": [
+        "bookmarks.jumpToPrevious"
+      ]
     }
   ],
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.enablePreview": false,
-  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
   "workbench.startupEditor": "newUntitledFile",
   "highlight.regexes": {
     "(/[/*] ?)(TODO:?|END-TODO:?)(.*)?": [
@@ -65,7 +114,9 @@
         "overviewRulerColor": "rgba(255,255,0,0.85)",
         "overviewRulerLane": 4
       },
-      { "color": "rgb(215,215,0)" }
+      {
+        "color": "rgb(215,215,0)"
+      }
     ],
     "(/[/*] ?)(DEPRECATED)(.*)?": [
       {},
@@ -74,7 +125,9 @@
         "overviewRulerColor": "rgba(255,100,0,0.85)",
         "overviewRulerLane": 4
       },
-      { "color": "rgb(215,100,100)" }
+      {
+        "color": "rgb(215,100,100)"
+      }
     ]
   },
   "search.smartCase": true,
@@ -100,5 +153,6 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "terminal.integrated.fontFamily": "Meslo LG M for Powerline"
 }
