@@ -1,11 +1,18 @@
 [user]
 	name = Sam Fritton
-	email = sfritton94@gmail.com
+	email = samuel.fritton@target.com
 [alias]
   hist = log --pretty=format:'%x09%C(blue)%ad%C(reset) %C(green)[%h]%C(reset) | %C(yellow)%an%C(reset) : %C(red)%s%C(reset) %C(blue)%d%C(reset)' --graph --date=short
   rekt = reset --hard
-  sync = "!f() { local BRANCH=${1:-${git branch --show-current}}; git checkout $BRANCH && git pull origin $BRANCH && git pull origin master; }; f"
-  fresh = "!f() { local BRANCH_NAME=${1}; git sync master && git checkout -b $BRANCH_NAME; }; f"
+  # Pushes an empty commit. Useful for restarting CI processes
+  bump = "!f() { git commit -m bump --allow-empty && git push; }; f"
+  # Returns the name of the default branch. Often "main" or "master"
+  main = "!f() { git remote show origin | sed -n '/HEAD branch/s/.*: //p'; }; f"
+  # Syncs your local branch to its remote version, then to the default branch. Accepts an optional $BRANCH parameter
+  sync = "!f() { local BRANCH=${1:-$(git branch --show-current)}; git checkout $BRANCH && git pull origin $BRANCH && git pull origin $(git main); }; f"
+  # Creates a new branch off of remote head of the default branch
+  fresh = "!f() { local BRANCH_NAME=${1}; git sync $(git main) && git checkout -b $BRANCH_NAME && git push origin $BRANCH_NAME; }; f"
+  # I don't really remember what these do, but they could be useful
   forget = "!f() { file=${1}; git update-index --assume-unchanged $file; }; f"
   remember = "!f() { file=${1}; git update-index --no-assume-unchanged $file; }; f"
 [core]

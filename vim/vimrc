@@ -23,11 +23,11 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ap/vim-css-color'
-Plugin 'SirVer/ultisnips'
+"Plugin 'SirVer/ultisnips'
 Plugin 'posva/vim-vue'
 Plugin 'ianks/vim-tsx'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'dense-analysis/ale'
 
 " The following are examples of different formats supported.
@@ -97,11 +97,11 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 "easier to use snippets
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+"let g:UltiSnipsJumpForwardTrigger="<tab>"
+"let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 "set the snippets directory
-let g:UltiSnipsSnippetDirectories=["my-snippets"]
+"let g:UltiSnipsSnippetDirectories=["my-snippets"]
 
 "easier to open nerdtree
 nnoremap <leader>f :NERDTree<C-R>=expand('%:p:h') . '/'<CR><CR>

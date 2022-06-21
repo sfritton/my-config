@@ -1,20 +1,61 @@
 {
-  "telemetry.telemetryLevel": "off",
-  "editor.fontSize": 14,
-  "editor.tabSize": 2,
-  "editor.cursorStyle": "block",
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "vscode.json-language-features" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "breadcrumbs.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.cursorStyle": "block",
+  "editor.fontFamily": "\"FiraCode-Retina\", 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "500",
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs":"active",
+  "editor.tabSize": 2,
+  "extensions.ignoreRecommendations": true,
+  "git.confirmSync": false,
+  "gitlens.blame.ignoreWhitespace": true,
+  "highlight.regexes": {
+    "(/[/*] ?)(TODO:?|END-TODO:?)(.*)?": [
+      {},
+      {
+        "color": "rgb(255,255,100)",
+        "overviewRulerColor": "rgba(255,255,0,0.85)",
+        "overviewRulerLane": 4
+      },
+      {
+        "color": "rgb(215,215,0)"
+      }
+    ],
+    "(/[/*] ?)(DEPRECATED)(.*)?": [
+      {},
+      {
+        "color": "rgb(255,100,100)",
+        "overviewRulerColor": "rgba(255,100,0,0.85)",
+        "overviewRulerLane": 4
+      },
+      {
+        "color": "rgb(215,100,100)"
+      }
+    ]
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "search.smartCase": true,
+  "telemetry.telemetryLevel": "off",
   "terminal.explorerKind": "external",
   "terminal.external.osxExec": "iTerm.app",
-  "editor.formatOnSave": true,
-  "breadcrumbs.enabled": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.fontFamily": "Meslo LG M for Powerline",
+  "terminal.integrated.rendererType": "dom",
+  "typescript.experimental.useSeparateSyntaxServer": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "Monokai",
   "vim.changeWordIncludesWhitespace": true,
+  "vim.cursorStylePerMode.insert": "line",
   "vim.hlsearch": true,
   "vim.leader": ",",
-  "vim.smartcase": true,
   "vim.normalModeKeyBindings": [
     {
       "before": [
@@ -102,57 +143,12 @@
       ]
     }
   ],
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.editor.enablePreview": false,
-  "js/ts.implicitProjectConfig.experimentalDecorators": true,
-  "workbench.startupEditor": "newUntitledFile",
-  "highlight.regexes": {
-    "(/[/*] ?)(TODO:?|END-TODO:?)(.*)?": [
-      {},
-      {
-        "color": "rgb(255,255,100)",
-        "overviewRulerColor": "rgba(255,255,0,0.85)",
-        "overviewRulerLane": 4
-      },
-      {
-        "color": "rgb(215,215,0)"
-      }
-    ],
-    "(/[/*] ?)(DEPRECATED)(.*)?": [
-      {},
-      {
-        "color": "rgb(255,100,100)",
-        "overviewRulerColor": "rgba(255,100,0,0.85)",
-        "overviewRulerLane": 4
-      },
-      {
-        "color": "rgb(215,100,100)"
-      }
-    ]
-  },
-  "search.smartCase": true,
-  "git.confirmSync": false,
-  "typescript.experimental.useSeparateSyntaxServer": true,
-  "terminal.integrated.rendererType": "dom",
-  "vim.cursorStylePerMode.insert": "line",
+  "vim.smartcase": true,
   "window.zoomLevel": 0,
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "\"FiraCode-Retina\", 'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontWeight": "500",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "gitlens.blame.ignoreWhitespace": true,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "extensions.ignoreRecommendations": true,
-  "terminal.integrated.fontFamily": "Meslo LG M for Powerline"
+  "workbench.colorTheme": "Monokai",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false
 }
