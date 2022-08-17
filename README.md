@@ -5,6 +5,11 @@ my-config is a repo to store my customizations for programs like zsh, vim, and g
 
 ## Installation
 1. Clone this repo into your `$HOME` directory.
+
+```sh
+git clone https://github.com/sfritton/my-config.git .my-config
+```
+
 2. Run `init.sh`.
 3. Restart your terminal to see the updates.
 
