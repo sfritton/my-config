@@ -13,7 +13,7 @@
   "editor.fontSize": 14,
   "editor.fontWeight": "500",
   "editor.formatOnSave": true,
-  "editor.guides.bracketPairs":"active",
+  "editor.guides.bracketPairs": "active",
   "editor.tabSize": 2,
   "extensions.ignoreRecommendations": true,
   "git.confirmSync": false,
@@ -58,89 +58,40 @@
   "vim.leader": ",",
   "vim.normalModeKeyBindings": [
     {
-      "before": [
-        "<C-h>"
-      ],
-      "after": [
-        "<C-w>",
-        "h"
-      ]
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
     },
     {
-      "before": [
-        "<C-l>"
-      ],
-      "after": [
-        "<C-w>",
-        "l"
-      ]
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
     },
     {
-      "before": [
-        "<C-j>"
-      ],
-      "after": [
-        "<C-w>",
-        "j"
-      ]
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
     },
     {
-      "before": [
-        "<C-k>"
-      ],
-      "after": [
-        "<C-w>",
-        "k"
-      ]
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
     },
     {
-      "before": [
-        "<leader>",
-        "d"
-      ],
-      "commands": [
-        ":noh"
-      ]
+      "before": ["<leader>", "d"],
+      "commands": [":noh"]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "m"
-      ],
-      "commands": [
-        "bookmarks.toggle"
-      ]
+      "before": ["<leader>", "b", "m"],
+      "commands": ["bookmarks.toggle"]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "l"
-      ],
-      "commands": [
-        "bookmarks.list"
-      ]
+      "before": ["<leader>", "b", "l"],
+      "commands": ["bookmarks.list"]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "j"
-      ],
-      "commands": [
-        "bookmarks.jumpToNext"
-      ]
+      "before": ["<leader>", "b", "j"],
+      "commands": ["bookmarks.jumpToNext"]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "k"
-      ],
-      "commands": [
-        "bookmarks.jumpToPrevious"
-      ]
+      "before": ["<leader>", "b", "k"],
+      "commands": ["bookmarks.jumpToPrevious"]
     }
   ],
   "vim.smartcase": true,
@@ -150,5 +101,8 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false
+  "explorer.confirmDragAndDrop": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
