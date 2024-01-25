@@ -18,6 +18,7 @@
   "extensions.ignoreRecommendations": true,
   "git.confirmSync": false,
   "gitlens.blame.ignoreWhitespace": true,
+  "gitlens.remotes": [{ "domain": "git.target.com", "type": "GitHub" }],
   "highlight.regexes": {
     "(/[/*] ?)(TODO:?|END-TODO:?)(.*)?": [
       {},
