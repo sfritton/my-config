@@ -18,6 +18,7 @@
   "extensions.ignoreRecommendations": true,
   "git.confirmSync": false,
   "gitlens.blame.ignoreWhitespace": true,
+  "gitlens.remotes": [{ "domain": "git.target.com", "type": "GitHub" }],
   "highlight.regexes": {
     "(/[/*] ?)(TODO:?|END-TODO:?)(.*)?": [
       {},
@@ -95,7 +96,6 @@
     }
   ],
   "vim.smartcase": true,
-  "window.zoomLevel": 0,
   "workbench.colorTheme": "Monokai",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -103,6 +103,13 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "off"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

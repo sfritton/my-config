@@ -1,6 +1,6 @@
 [user]
 	name = Sam Fritton
-	email = samuel.fritton@target.com
+	email = sfritton94@gmail.com
 [alias]
   hist = log --pretty=format:'%x09%C(blue)%ad%C(reset) %C(green)[%h]%C(reset) | %C(yellow)%an%C(reset) : %C(red)%s%C(reset) %C(blue)%d%C(reset)' --graph --date=short
   rekt = reset --hard
@@ -28,6 +28,7 @@
   defaultBranch = main
 [credential]
 	helper = 
-	helper = /usr/local/share/gcm-core/git-credential-manager-core
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true

@@ -28,7 +28,7 @@ Plugin 'posva/vim-vue'
 Plugin 'ianks/vim-tsx'
 Plugin 'leafgarland/typescript-vim'
 "Plugin 'Valloric/YouCompleteMe'
-Plugin 'dense-analysis/ale'
+"Plugin 'dense-analysis/ale'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
