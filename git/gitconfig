@@ -1,6 +1,6 @@
 [user]
 	name = Sam Fritton
-	email = sfritton94@gmail.com
+	email = samuel.fritton@target.com
 [alias]
   hist = log --pretty=format:'%x09%C(blue)%ad%C(reset) %C(green)[%h]%C(reset) | %C(yellow)%an%C(reset) : %C(red)%s%C(reset) %C(blue)%d%C(reset)' --graph --date=short
   rekt = reset --hard
@@ -14,6 +14,8 @@
   sync-main = "!f() { git sync $(git main); }; f"
   # Creates a new branch off of remote head of the default branch
   fresh = "!f() { local BRANCH_NAME=${1}; git sync $(git main) && git checkout -b $BRANCH_NAME && git push origin $BRANCH_NAME; }; f"
+  # Fetches and checks out a remote branch
+  fco = "!f() { local BRANCH_NAME=${1}; git fetch origin $BRANCH_NAME && git checkout $BRANCH_NAME; }; f"
   # I don't really remember what these do, but they could be useful
   forget = "!f() { file=${1}; git update-index --assume-unchanged $file; }; f"
   remember = "!f() { file=${1}; git update-index --no-assume-unchanged $file; }; f"
@@ -28,7 +30,8 @@
   defaultBranch = main
 [credential]
 	helper = 
-	helper = 
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[credential "https://git.target.com"]
+	provider = github
